@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter:wght@300;400;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+input::placeholder {
+  font: inherit;
+}
+
+.h1 {
+  @apply text-[40px] leading-[40px] lg:text-[60px] lg:leading-[62px] font-extrabold;
+}
+
+.h2 {
+  @apply text-[32px] leading-[40px] lg:text-[50px] lg:leading-[50px] font-extrabold;
+}
+
+.h3 {
+  @apply text-[38px] leading-[46px] font-extrabold;
+}
+
+.h4 {
+  @apply text-[30px] leading-[46px] font-extrabold;
+}
+
+.h5 {
+  @apply text-[24px] leading-[32px] font-extrabold;
+}
+
+.h6 {
+  @apply text-[18px] leading-[28px] font-bold;
+}
+
+.text-body-sm {
+  @apply font-normal text-[16px] leading-[26px];
+}
+
+.text__body_md {
+    @apply font-normal text-[20px] leading-[32px];
+}
+
+.text-body-lg {
+  @apply font-normal text-[24px] leading-[34px];
+}
+
+.btn {
+  @apply flex justify-center items-center rounded-[1px];
+}
+
+.btn-sm {
+  @apply font-bold uppercase text-[12px] leading-[18px] h-[42px] px-[30px] tracking-[1px];
+}
+
+.btn-lg {
+  @apply font-bold uppercase text-[14px] leading-[18px] h-[46px] px-[40px] tracking-[1px];
+}
+
+.btn-primary {
+  @apply bg-primary-200 text-neutral-100 hover:bg-primary-200/90 transition;
+}
+
+.btn-secondary {
+  @apply bg-white text-neutral-500 hover:bg-white/90 transition;
+}
+
+.link {
+  @apply text-neutral-500 text-sm uppercase font-extrabold tracking-[1px];
+}
+
+.section {
+  @apply pb-[80px] md:pb-[110px] lg:pb-[180px];
+}
+
+.section-title-group {
+  @apply flex items-center justify-center -space-x-20 mb-[50px] lg:mb-[80px];
+}
+
+.section-title {
+  @apply flex -space-x-4;
+}
