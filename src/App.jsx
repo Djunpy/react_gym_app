@@ -24,7 +24,6 @@ function App() {
             <Community />
             <Faq />
             <Footer />
-            <div className="h-[40000px]"></div>
         </div>
     );
 }
